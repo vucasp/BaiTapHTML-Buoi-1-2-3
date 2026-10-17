@@ -163,6 +163,22 @@
     <Content Include="Scripts\jquery.validate.unobtrusive.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
     <Content Include="Scripts\modernizr-2.8.3.js" />
+    <Content Include="ThucHanh\Buoi01_HTML\Bai01.html" />
+    <Content Include="ThucHanh\Buoi01_HTML\Bai02.html" />
+    <Content Include="ThucHanh\Buoi01_HTML\Bai04.html" />
+    <Content Include="ThucHanh\Buoi01_HTML\Bai05.html" />
+    <Content Include="ThucHanh\Buoi01_HTML\Bai06.html" />
+    <Content Include="ThucHanh\Buoi01_HTML\th02\contact.html" />
+    <Content Include="ThucHanh\Buoi01_HTML\th02\home.html" />
+    <Content Include="ThucHanh\Buoi01_HTML\th02\product.html" />
+    <Content Include="ThucHanh\Buoi01_HTML\th02\src\new.html" />
+    <Content Include="ThucHanh\Buoi01_HTML\th02\src\sub\intro.html" />
+    <Content Include="ThucHanh\Buoi01_HTML\th02\src\sub\sale.html" />
+    <Content Include="ThucHanh\Buoi02_CSS\ITTrainingCenter\index.html" />
+    <Content Include="ThucHanh\Buoi02_CSS\ITTrainingCenter\styleITTrainingCenter.css" />
+    <Content Include="ThucHanh\Buoi03_JS\ITTrainingCenter\index.html" />
+    <Content Include="ThucHanh\Buoi03_JS\ITTrainingCenter\appITTrainingCenter.js" />
+    <Content Include="ThucHanh\Buoi03_JS\ITTrainingCenter\styleITTrainingCenter.css" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -181,6 +197,8 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Models\" />
+    <Folder Include="ThucHanh\Buoi02_CSS\ITTrainingCenter\image\" />
+    <Folder Include="ThucHanh\Buoi03_JS\ITTrainingCenter\image\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\bootstrap.rtl.min.css.map" />

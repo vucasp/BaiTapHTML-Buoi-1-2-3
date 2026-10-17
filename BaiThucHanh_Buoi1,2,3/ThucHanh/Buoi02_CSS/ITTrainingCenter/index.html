@@ -1,0 +1,269 @@
+﻿<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IT Training Center</title>
+    <link rel="stylesheet" href="styleITTrainingCenter.css">
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <div class="brand">
+            <div class="logo-icon">💻</div>
+            <div class="brand-text">
+                <h1>IT Training Center</h1>
+                <p>Learn Technology - Build Your Future</p>
+            </div>
+        </div>
+        <div class="header-banner-text">
+            <span>Better Skills<br>Brighter Future</span>
+        </div>
+    </header>
+
+    <!-- NAVIGATION -->
+    <nav>
+        <ul>
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="#courses">Courses</a></li>
+            <li><a href="#tuition">Tuition</a></li>
+            <li><a href="#registration">Registration</a></li>
+        </ul>
+        <div class="search-box">
+            <input type="text" placeholder="🔍 Search courses...">
+        </div>
+    </nav>
+
+    <!-- BANNER -->
+    <section class="banner">
+        <h2>Professional IT Training Programs</h2>
+        <p>HTML · CSS · JavaScript · ASP.NET MVC · Database</p>
+    </section>
+
+    <!-- MAIN LAYOUT (3 COLUMNS) -->
+    <main>
+        <!-- LEFT MENU -->
+        <aside class="left-menu">
+            <h3>Menu</h3>
+            <a href="#">🏠 Home</a>
+            <a href="#courses">📖 Course List</a>
+            <a href="#tuition">💰 Tuition Fee</a>
+            <a href="#registration" class="btn-register-menu">✍ Register</a>
+        </aside>
+
+        <!-- MAIN CONTENT -->
+        <div class="main-content">
+            <!-- Welcome Section -->
+            <section class="welcome-box">
+                <h2>Welcome</h2>
+                <p>Welcome to IT Training Center. We provide professional information technology training courses for students.</p>
+            </section>
+
+            <!-- Available Courses Cards -->
+            <section id="courses" class="available-courses">
+                <h2>Available Courses</h2>
+                <div class="courses-grid">
+                    <article class="course-card">
+                        <div class="card-icon html-bg">HTML</div>
+                        <h3>HTML & CSS</h3>
+                        <p>Build modern and responsive web pages.</p>
+                        <a href="#registration" class="btn-card">Learn More</a>
+                    </article>
+                    <article class="course-card">
+                        <div class="card-icon js-bg">JS</div>
+                        <h3>JavaScript</h3>
+                        <p>Make your website interactive and dynamic.</p>
+                        <a href="#registration" class="btn-card">Learn More</a>
+                    </article>
+                    <article class="course-card">
+                        <div class="card-icon net-bg">.NET</div>
+                        <h3>ASP.NET MVC</h3>
+                        <p>Build scalable web applications with ASP.NET MVC.</p>
+                        <a href="#registration" class="btn-card">Learn More</a>
+                    </article>
+                    <article class="course-card">
+                        <div class="card-icon db-bg">🗄️</div>
+                        <h3>Database</h3>
+                        <p>Work with SQL and real-world databases.</p>
+                        <a href="#registration" class="btn-card">Learn More</a>
+                    </article>
+                </div>
+            </section>
+
+            <!-- Course List & Tuition Fee Table -->
+            <section id="tuition" class="course-table-section">
+                <h2>Course List</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Course Name</th>
+                            <th>Duration</th>
+                            <th>Tuition Fee</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>HTML & CSS</td>
+                            <td>4 Weeks</td>
+                            <td>$100</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>JavaScript</td>
+                            <td>6 Weeks</td>
+                            <td>$150</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>ASP.NET MVC</td>
+                            <td>8 Weeks</td>
+                            <td>$200</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>Database</td>
+                            <td>6 Weeks</td>
+                            <td>$150</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+            <!-- Course Registration Form -->
+            <section id="registration" class="registration-section">
+                <h2>Course Registration</h2>
+                <form action="https://httpbin.org/anything" method="post">
+                    <div class="form-group">
+                        <label>Full Name: *</label>
+                        <input type="text" required placeholder="Enter your full name">
+                    </div>
+                    <div class="form-group">
+                        <label>Email: *</label>
+                        <input type="email" required placeholder="Enter your email">
+                    </div>
+                    <div class="form-group">
+                        <label>Phone Number: *</label>
+                        <input type="tel" pattern="[0-9]{10}" required placeholder="Enter 10-digit phone number">
+                    </div>
+                    <div class="form-group">
+                        <label>Course: *</label>
+                        <select required>
+                            <option value="">Select Course</option>
+                            <option value="html">HTML & CSS</option>
+                            <option value="js">JavaScript</option>
+                            <option value="net">ASP.NET MVC</option>
+                            <option value="db">Database</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label>Learning Mode:</label>
+                        <div class="radio-group">
+                            <label><input type="radio" name="mode" checked> Online</label>
+                            <label><input type="radio" name="mode"> Offline</label>
+                            <label><input type="radio" name="mode"> Hybrid</label>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label>Class Schedule:</label>
+                        <div class="radio-group">
+                            <label><input type="radio" name="schedule" checked> Morning</label>
+                            <label><input type="radio" name="schedule"> Afternoon</label>
+                            <label><input type="radio" name="schedule"> Evening</label>
+                        </div>
+                    </div>
+                    <div class="form-actions">
+                        <button type="submit" class="btn-submit">🚀 Register Now</button>
+                    </div>
+                </form>
+            </section>
+
+            <!-- Student Reviews -->
+            <section class="student-reviews">
+                <h2>Student Reviews</h2>
+                <div class="reviews-grid">
+                    <article class="review-card">
+                        <div class="reviewer-info">
+                            <img src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?w=100" alt="Avatar">
+                            <div>
+                                <h4>Nguyen Van B</h4>
+                                <span class="stars">⭐⭐⭐⭐⭐</span>
+                            </div>
+                        </div>
+                        <p>"The instructors are enthusiastic and provide excellent support to the students."</p>
+                    </article>
+                    <article class="review-card">
+                        <div class="reviewer-info">
+                            <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100" alt="Avatar">
+                            <div>
+                                <h4>Tran Thi C</h4>
+                                <span class="stars">⭐⭐⭐⭐⭐</span>
+                            </div>
+                        </div>
+                        <p>"The course is very practical and easy to understand."</p>
+                    </article>
+                    <article class="review-card">
+                        <div class="reviewer-info">
+                            <img src="https://images.unsplash.com/photo-1570295999919-56ceb5ecca61?w=100" alt="Avatar">
+                            <div>
+                                <h4>Le Minh D</h4>
+                                <span class="stars">⭐⭐⭐⭐⭐</span>
+                            </div>
+                        </div>
+                        <p>"Great training program with helpful teachers and good facilities."</p>
+                    </article>
+                </div>
+            </section>
+        </div>
+
+        <!-- RIGHT ASIDE -->
+        <aside class="right-aside">
+            <div class="aside-box available-box">
+                <h3>Available Courses</h3>
+                <ul>
+                    <li><a href="#courses">🔹 HTML & CSS</a></li>
+                    <li><a href="#courses">🔹 JavaScript</a></li>
+                    <li><a href="#courses">🔹 ASP.NET MVC</a></li>
+                </ul>
+                <a href="#registration" class="btn-aside-register">Register</a>
+            </div>
+
+            <div class="aside-box promo-box">
+                <span class="badge-new">NEW</span>
+                <h4>Upgradable Your Skills Today!</h4>
+                <p>Join our hands-on courses and get career ready.</p>
+                <a href="#courses" class="btn-promo">Learn More</a>
+            </div>
+
+            <div class="aside-box benefits-box">
+                <ul>
+                    <li>👨‍🏫 <strong>Experienced Instructors</strong><br><small>Learn from industry experts</small></li>
+                    <li>📅 <strong>Flexible Schedule</strong><br><small>Online, Offline or Hybrid</small></li>
+                    <li>📜 <strong>Certificate Provided</strong><br><small>Get certified after completion</small></li>
+                </ul>
+            </div>
+
+            <div class="aside-box future-box">
+                <h4>Your Future Starts Here</h4>
+                <p>Skills for a Brighter Tomorrow</p>
+                <div class="chart-icon">📈</div>
+            </div>
+        </aside>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <address>
+            <span>✉ Email: ABC@gmail.com</span>
+            <span>📞 Phone: 10234</span>
+            <span>📍 Address: 828, Su Vanh Hanh, Ho Chi Minh City</span>
+        </address>
+        <div class="footer-bottom">
+            <p>Copyright © 2026 – IT Training Center</p>
+        </div>
+    </footer>
+
+</body>
+</html>

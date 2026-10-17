@@ -1,0 +1,56 @@
+﻿<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Sample Stock Survey</title>
+</head>
+<body style="background-color: #ffffcc; font-family: Arial, sans-serif;">
+    <h2 style="color: navy; text-align: center;">Sample Stock Survey</h2>
+
+    <form action="https://httpbin.org/anything" method="post">
+        <!-- Radio Button -->
+        <p><b>Describe your investment experience</b></p>
+        <input type="radio" name="exp" id="beginner" value="beginner">
+        <label for="beginner">beginner</label>
+
+        <input type="radio" name="exp" id="intermediate" value="intermediate" checked>
+        <label for="intermediate">intermediate</label>
+
+        <input type="radio" name="exp" id="expert" value="expert">
+        <label for="expert">expert</label>
+
+        <!-- Checkbox -->
+        <p><b>Types of Investments you make</b></p>
+        <input type="checkbox" name="inv" id="stocks" value="stocks" checked>
+        <label for="stocks">Individual Stocks</label>
+
+        <input type="checkbox" name="inv" id="options" value="options">
+        <label for="options">Options</label>
+
+        <input type="checkbox" name="inv" id="funds" value="funds" checked>
+        <label for="funds">Mutual Funds</label>
+
+        <!-- Select / Dropdown -->
+        <p><b>How do you buy your stocks?</b></p>
+        <select name="buy_method">
+            <option value="online">1) On-Line</option>
+            <option value="phone">2) Touch Tone Trading</option>
+            <option value="broker">3) Broker Assisted</option>
+            <option value="other" selected>4) Other</option>
+        </select>
+
+        <!-- Text Input -->
+        <p><b>What is your hot stock pick for?</b></p>
+        <input type="text" name="stock_pick">
+
+        <!-- Textarea -->
+        <p><b>Any Investment Advice for others?</b></p>
+        <textarea name="advice" rows="4" cols="40"></textarea>
+        <br><br>
+
+        <!-- Buttons -->
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+    </form>
+</body>
+</html>

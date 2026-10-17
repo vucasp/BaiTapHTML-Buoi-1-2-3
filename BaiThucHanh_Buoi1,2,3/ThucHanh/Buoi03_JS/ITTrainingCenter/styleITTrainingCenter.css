@@ -1,0 +1,540 @@
+﻿/* RESET & COMMON STYLES */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f4f6f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* HEADER */
+header {
+    background-color: #0b2545;
+    color: white;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.logo-icon {
+    font-size: 40px;
+    background: #134074;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.brand-text h1 {
+    font-size: 24px;
+    color: #ffffff;
+}
+
+.brand-text p {
+    font-size: 13px;
+    color: #8da9c4;
+}
+
+.header-banner-text {
+    text-align: right;
+    font-style: italic;
+    color: #ffd166;
+    font-size: 14px;
+}
+
+/* NAVIGATION */
+nav {
+    background-color: #134074;
+    padding: 10px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+    nav ul {
+        list-style: none;
+        display: flex;
+        gap: 15px;
+    }
+
+    nav a {
+        color: white;
+        text-decoration: none;
+        padding: 8px 16px;
+        border-radius: 4px;
+        font-weight: bold;
+        transition: background 0.3s;
+    }
+
+        nav a:hover, nav a.active {
+            background-color: #00b4d8;
+        }
+
+.search-box input {
+    padding: 6px 12px;
+    border-radius: 4px;
+    border: none;
+    outline: none;
+    width: 200px;
+}
+
+/* BANNER */
+.banner {
+    background: linear-gradient(135deg, #ffb703, #fb8500);
+    color: #0b2545;
+    text-align: center;
+    padding: 30px 20px;
+}
+
+    .banner h2 {
+        font-size: 28px;
+        margin-bottom: 5px;
+    }
+
+    .banner p {
+        font-weight: bold;
+        font-size: 14px;
+    }
+
+/* MAIN LAYOUT (3 COLUMNS) */
+main {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+/* LEFT MENU */
+.left-menu {
+    width: 220px;
+    background: white;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    height: fit-content;
+}
+
+    .left-menu h3 {
+        font-size: 16px;
+        margin-bottom: 10px;
+        color: #0b2545;
+        border-bottom: 2px solid #eee;
+        padding-bottom: 5px;
+    }
+
+    .left-menu a {
+        display: block;
+        padding: 10px;
+        color: #333;
+        text-decoration: none;
+        margin-bottom: 5px;
+        border-radius: 4px;
+        background: #f8f9fa;
+        transition: 0.2s;
+    }
+
+        .left-menu a:hover {
+            background: #e9ecef;
+            color: #0077b6;
+        }
+
+    .left-menu .btn-register-menu {
+        background: #00b4d8;
+        color: white;
+        text-align: center;
+        font-weight: bold;
+    }
+
+        .left-menu .btn-register-menu:hover {
+            background: #0077b6;
+            color: white;
+        }
+
+/* MAIN CONTENT */
+.main-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.welcome-box, .available-courses, .course-table-section, .registration-section, .student-reviews {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+    .welcome-box h2, .available-courses h2, .course-table-section h2, .registration-section h2, .student-reviews h2 {
+        color: #0b2545;
+        margin-bottom: 15px;
+        font-size: 20px;
+        border-left: 4px solid #00b4d8;
+        padding-left: 10px;
+    }
+
+/* COURSES GRID */
+.courses-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+}
+
+.course-card {
+    background: #f8f9fa;
+    border: 1px solid #e9ecef;
+    border-radius: 6px;
+    padding: 15px;
+    text-align: center;
+    transition: transform 0.2s;
+}
+
+    .course-card:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+.card-icon {
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    padding: 15px;
+    border-radius: 6px;
+    margin-bottom: 10px;
+}
+
+.html-bg {
+    background: #e34f26;
+}
+
+.js-bg {
+    background: #f7df1e;
+    color: #333 !important;
+}
+
+.net-bg {
+    background: #512bd4;
+}
+
+.db-bg {
+    background: #0077b6;
+}
+
+.course-card h3 {
+    font-size: 15px;
+    margin-bottom: 8px;
+}
+
+.course-card p {
+    font-size: 12px;
+    color: #666;
+    margin-bottom: 12px;
+}
+
+.btn-card {
+    display: inline-block;
+    background: #0077b6;
+    color: white;
+    padding: 6px 12px;
+    font-size: 12px;
+    border-radius: 4px;
+    text-decoration: none;
+}
+
+    .btn-card:hover {
+        background: #00b4d8;
+    }
+
+/* TABLE STYLING */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+    font-size: 14px;
+}
+
+th {
+    background-color: #0077b6;
+    color: white;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f8f9fa;
+}
+
+tbody tr:hover {
+    background-color: #e2eafc;
+}
+
+/* FORM STYLING */
+.form-group {
+    margin-bottom: 15px;
+}
+
+    .form-group label {
+        display: block;
+        font-size: 13px;
+        font-weight: bold;
+        margin-bottom: 5px;
+    }
+
+    .form-group input[type="text"],
+    .form-group input[type="email"],
+    .form-group input[type="tel"],
+    .form-group select {
+        width: 100%;
+        padding: 8px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        outline: none;
+    }
+
+        .form-group input:focus, .form-group select:focus {
+            border-color: #00b4d8;
+            box-shadow: 0 0 5px rgba(0, 180, 216, 0.3);
+        }
+
+    .form-group input:valid {
+        border-color: #2a9d8f;
+    }
+
+.radio-group {
+    display: flex;
+    gap: 20px;
+    font-size: 14px;
+    font-weight: normal;
+}
+
+    .radio-group input[type="radio"]:checked {
+        accent-color: #0077b6;
+    }
+
+.btn-submit {
+    background: #2a9d8f;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+}
+
+    .btn-submit:hover {
+        background: #21867a;
+    }
+
+/* REVIEWS GRID */
+.reviews-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+}
+
+.review-card {
+    background: #f8f9fa;
+    border: 1px solid #e9ecef;
+    padding: 12px;
+    border-radius: 6px;
+}
+
+.reviewer-info {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 8px;
+}
+
+    .reviewer-info img {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        object-fit: cover;
+    }
+
+    .reviewer-info h4 {
+        font-size: 14px;
+    }
+
+.stars {
+    font-size: 12px;
+}
+
+.review-card p {
+    font-size: 12px;
+    color: #555;
+    font-style: italic;
+}
+
+/* RIGHT ASIDE */
+.right-aside {
+    width: 260px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.aside-box {
+    background: white;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+    .aside-box h3, .aside-box h4 {
+        font-size: 15px;
+        margin-bottom: 10px;
+        color: #0b2545;
+    }
+
+.available-box ul {
+    list-style: none;
+    margin-bottom: 10px;
+}
+
+.available-box li a {
+    color: #0077b6;
+    text-decoration: none;
+    font-size: 13px;
+    display: block;
+    padding: 4px 0;
+}
+
+.btn-aside-register {
+    display: block;
+    background: #ffb703;
+    color: #0b2545;
+    text-align: center;
+    padding: 8px;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 4px;
+}
+
+.promo-box {
+    background: #e0fbfc;
+    border: 1px solid #c2dfe3;
+    position: relative;
+}
+
+.badge-new {
+    background: #e63946;
+    color: white;
+    font-size: 10px;
+    padding: 2px 6px;
+    border-radius: 4px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-weight: bold;
+}
+
+.promo-box p {
+    font-size: 12px;
+    margin-bottom: 8px;
+}
+
+.btn-promo {
+    display: inline-block;
+    background: #0077b6;
+    color: white;
+    font-size: 12px;
+    padding: 5px 10px;
+    text-decoration: none;
+    border-radius: 4px;
+}
+
+.benefits-box ul {
+    list-style: none;
+}
+
+.benefits-box li {
+    font-size: 13px;
+    margin-bottom: 10px;
+}
+
+.benefits-box small {
+    color: #666;
+}
+
+.future-box {
+    background: linear-gradient(135deg, #134074, #0b2545);
+    color: white;
+}
+
+    .future-box h4 {
+        color: white;
+    }
+
+    .future-box p {
+        font-size: 12px;
+        color: #8da9c4;
+    }
+
+.chart-icon {
+    font-size: 30px;
+    text-align: right;
+}
+
+/* FOOTER */
+footer {
+    background-color: #0b2545;
+    color: white;
+    padding: 20px 30px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+    footer address {
+        display: flex;
+        justify-content: space-around;
+        font-style: normal;
+        font-size: 13px;
+        margin-bottom: 15px;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+.footer-bottom {
+    border-top: 1px solid #134074;
+    padding-top: 10px;
+    font-size: 12px;
+    color: #8da9c4;
+}
+
+/* RESPONSIVE MEDIA QUERY */
+@media (max-width: 1024px) {
+    main {
+        flex-direction: column;
+    }
+
+    .left-menu, .right-aside {
+        width: 100%;
+    }
+
+    .courses-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .reviews-grid {
+        grid-template-columns: 1fr;
+    }
+}
